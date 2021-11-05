@@ -1,0 +1,286 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+.beg{
+    height: 100vh;
+    padding: 2.5rem;
+    background-image: url(images/desktop/image-header.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+}
+header nav ul li{
+    list-style: none;
+    margin: 0px 10px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Barlow', sans-serif;
+}
+header nav ul li:nth-child(4) a{
+    padding: 10px 10px;
+    color:#000;
+    background: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Fraunces', sans-serif;
+    font-size: 12px;
+}
+
+header nav ul li:nth-child(4) a:hover{
+    background: hsla(0, 0%, 100%, 0.37);
+    color: hsl(0, 0%, 100%);
+}
+.header{
+    text-align: center;
+}
+.header h1{
+    font-size: 80px;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 10px;
+    font-weight: 900;
+    margin: 70px;
+    font-family: 'Fraunces', serif;
+}
+
+/* Features */
+
+.features{
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+article{
+    flex-basis: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.left{
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left .text_left{
+    max-width: 70%;
+}
+.left h2{
+    font-size: 46px;
+    margin-bottom: 25px;
+    color: hsl(212, 27%, 19%);
+    font-weight: 900;
+    font-family: 'Fraunces', serif;
+}
+.left p{
+    margin-bottom: 36px;
+    color: hsl(212, 27%, 19%);
+    font-family: 'Barlow', sans-serif;
+
+}
+.left  a{
+    text-decoration: none;
+    color: hsl(212, 27%, 19%);
+    text-transform: uppercase;
+    padding: 10px;
+    position: relative;
+    font-family: 'Fraunces', serif;
+}
+.left a::before{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left:0;
+    cursor: pointer;
+    height: 10px;
+    background: hsla(51, 100%, 49%, 0.404);
+    z-index: -1;
+    border-radius: 8px;
+    }
+
+.left  a:hover::before{
+    background: hsl(51, 100%, 49%);
+}
+
+.right{
+    flex-basis: 50%;
+    overflow: hidden;
+    height: 100%;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+
+article:nth-child(2) .left a::before{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: hsla(7, 99%, 70%, 0.493);
+    z-index: -1;
+    border-radius: 8px;
+}
+article:nth-child(2) .left a:hover::before{
+    background: hsl(7, 99%, 70%);
+}
+article:nth-child(3) .left{
+    background-image: url(images/desktop/image-graphic-design.jpg);
+    background-position: center;
+    background-size: center;
+    position: relative;
+}
+article:nth-child(3) .left .text_left{
+    position: absolute;
+    bottom:25px;
+    left: 50%;
+    text-align: center;
+    max-width: 45%;
+}
+article:nth-child(3) .left .text_left h2{
+    font-size: 16px;
+    color: hsl(167, 40%, 24%);
+    font-family: 'Fraunces', serif;
+}
+article:nth-child(3) .left .text_left p{
+    font-size: 13px;
+    color: hsl(167, 40%, 24%);
+    font-family: 'Barlow', sans-serif;
+}
+
+article:nth-child(3) .left:nth-child(2){
+    background-image: url(images/desktop/image-photography.jpg);
+    background-position: center;
+    background-size: cover;
+}
+article:nth-child(3) .left .text_left h3{
+    font-size: 25px;
+    color: hsl(198, 62%, 26%);
+    margin-bottom: 16px;
+    font-family: 'Fraunces', serif;
+}
+article:nth-child(3) .left:nth-child(2) .text_left p{
+    font-size: 13px;
+    color: hsl(198, 62%, 26%);
+    font-family: 'Barlow', sans-serif;
+}
+
+/* Testimonials starts here */
+.testimonials{
+    padding: 100px;
+    text-align: center;
+    background: hsla(42, 92%, 90%, 0.192);
+}
+.testimonials h3{
+    text-transform: uppercase;
+    font-weight: 900;
+    color: hsl(210, 4%, 67%);
+    margin-bottom: 50px;
+    letter-spacing: 5px;
+    font-family: 'Fraunces', serif;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col{
+    flex-basis: 31%;
+}
+.col img{
+    border-radius: 50%;
+    width: 60px;
+    margin-bottom: 40px;
+}
+.col p{
+    color: hsl(198, 62%, 26%);
+    margin-bottom: 40px;
+    font-family: 'Barlow', sans-serif;
+}
+.name h4{
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Fraunces', serif;
+}
+.name p{
+    font-size: 13px;
+    font-family: 'Barlow', sans-serif;
+}
+
+/* Gallery*/
+.gallery{
+    display: flex;
+    align-items: center;
+    height: 600px;
+}
+.pictures{
+    display: flex;
+    flex-wrap: wrap;
+    width: 379.3px;
+    height: 500px;
+}
+
+/* Footer*/
+footer{
+    padding: 50px;
+    background: hsl(168, 32%, 55%);
+    text-align: center;
+}
+footer nav a{
+    text-decoration: none;
+}
+footer nav ul{
+    margin: 30px 0 65px;
+}
+footer nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+    list-style: none;
+}
+footer nav ul li a{
+    text-decoration: none;
+    color: hsl(167, 40%, 24%);
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+}
+footer nav ul li a:hover{
+    color: #fff;
+}
+footer > ul > li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+}
+.attribution { 
+    font-size: 15px; 
+    text-align: center; 
+    font-family: 'Barlow', sans-serif;
+}
+.attribution a{
+    text-decoration: none;
+    font-size: 15px; 
+    color: #fff;
+}
